@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qlite"
+version = "1.0.0"
+authors = [
+  { name="MARK JOSEPH NACE OCTAVO", email="biaojidiba@gmail.com" },
+]
+description = "A modular, mobile-friendly Quantum Compiler and Simulator"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "matplotlib>=3.4.0",
+    "ply>=3.11",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/MAX25M/qlite"
+"Bug Tracker" = "https://github.com/MAX25M/qlite/issues"
+
+[project.scripts]
+qlite = "cli:main"
