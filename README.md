@@ -1,6 +1,6 @@
 # Q-Lite Compiler 
 
-![Tests](https://github.com/YOUR_USERNAME/qlite/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/MAX25M/qlite/actions/workflows/tests.yml/badge.svg)
 ![PyPI Version](https://img.shields.io/pypi/v/qlite-compiler)
 ![License](https://img.shields.io/github/license/MAX25M/qlite)
 
