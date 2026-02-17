@@ -1,0 +1,10 @@
+# Create a Bell State: (|00> + |11>) / sqrt(2)
+qubit q[2];
+
+H q[0];          # Put first qubit in superposition
+CNOT(q[0], q[1]); # Entangle it with the second qubit
+# Create a Bell State: (|00> + |11>) / sqrt(2)
+qubit q[2];
+
+H q[0];          # Put first qubit in superposition
+CNOT(q[0], q[1]); # Entangle it with the second qubit
