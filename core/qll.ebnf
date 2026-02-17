@@ -1,0 +1,14 @@
+QLL EBNF
+
+(* Quantum Operations *)
+gate_app      = gate_name [ "(" expr ")" ] ( qarg | "(" qarg { "," qarg } ")" ) ";" ;
+
+(* Support for Rotational Gates *)
+gate_name     = "H" | "X" | "Y" | "Z" | "CNOT" | "RX" | "RY" | "RZ" ;
+
+(* Math Expressions for Angles *)
+expr          = term { ("+" | "-") term } ;
+term          = factor { ("*" | "/") factor } ;
+factor        = float | integer | "PI" | "(" expr ")" ;
+
+float         = [ "-" ] digit { digit } "." { digit } ;
