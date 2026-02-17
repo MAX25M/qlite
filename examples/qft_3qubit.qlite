@@ -1,0 +1,8 @@
+# Quantum Fourier Transform on 3 Qubits
+qubit q[3];
+
+# Prepare an initial state (e.g., |100> which is decimal 4)
+X q[0];
+
+# Apply the macro
+QFT q[0:3];
