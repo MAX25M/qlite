@@ -1,38 +1,34 @@
-# Contributing to Q-Lite Quantum Compiler 
+# Contributing to Qlite
 
-First off, thank you for considering contributing to Q-Lite! It’s people like you who make quantum computing more accessible for everyone.
+Thank you for considering contributing to Qlite! Here are some guidelines on how to contribute effectively.
 
-## 🗺️ How can I contribute?
+## License Badge
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-### 1. Reporting Bugs
-If you find a bug (e.g., the simulator crashes at 10 qubits), please open an Issue on GitHub. Include:
-* Your operating system.
-* The `.qlite` code that caused the crash.
-* The error message.
+## Repository Badge
+[![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers)
 
-### 2. Adding New Gates
-We are looking to expand our standard library. If you want to add a gate (like `CSWAP` or `RY`), you'll need to update:
-1. `Base_Gates.py`: Add the unitary matrix.
-2. `lexer.py`: Add the keyword.
-3. `transpiler.py`: Add the OpenQASM mapping.
+## How to Contribute
+1. **Fork the repository.**
+2. **Create a new branch.**
+   ```sh
+   git checkout -b feature/YourFeature
+   ```
+3. **Make your changes.**
+4. **Commit your changes.**
+   ```sh
+   git commit -m 'Add some feature'
+   ```
+5. **Push to the branch.**
+   ```sh
+   git push origin feature/YourFeature
+   ```
+6. **Open a Pull Request.**
 
-### 3. Improving the Simulator
-If you have ideas for "Noise Simulation" or "Tensor Network" backends, please start a Discussion thread before submitting a Pull Request.
+## Code Standards
+- Follow the existing code style.
+- Write clear and descriptive commit messages.
+- Test your changes and ensure they work as expected.
 
-## 🚀 Development Setup
-
-1. Fork the repository.
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # venv\Scripts\activate on Windows
-3. Install in editable mode:
-   pip install -e .
-
-#Running Tests
- # Before submitting a PR, ensure all unit tests pass:
-   python -m unittest discover tests
-   
-   
-Code of Conduct
-Please be respectful and supportive of all contributors. We are all here to learn and build cool quantum tech!
+## Further Information
+If you have any questions, feel free to open an issue or contact the maintainers.
