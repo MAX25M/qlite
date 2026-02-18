@@ -1,5 +1,5 @@
 import ply.yacc as yacc
-from lexer import tokens  # Import tokens from our Lexer
+from .lexer import tokens  # Import tokens from our Lexer
 
 def p_program(p):
     'program : statement_list'
