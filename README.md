@@ -34,7 +34,7 @@ pip install -r requirements.txt
 Usage
 1. The Q-Lite Language (.ql)
 Write your quantum algorithms in a simple, declarative style:
-``bash
+```bash
 // Example: Bell State
 qubit q[2];
 H q[0];
