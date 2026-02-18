@@ -96,6 +96,8 @@ python -m unittest discover tests
 * ![Done](https://img.shields.io/badge/-Complete-success?style=flat-square) Multi-qubit Gate Support (CNOT, CZ)
 * ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) OpenQASM 3.0 Compatibility
 * ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square)Integration with IBM Quantum (Qiskit)
+* ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) Q-Lite Quantum Programming Language Standalone IDE
+* ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) "Hardware Bridge"—a module that converts Q-Lite AST directly into OpenQASM,
 ---
 # License
 Distributed under the MIT License. See LICENSE for more information.
