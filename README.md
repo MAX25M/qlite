@@ -42,6 +42,7 @@ CNOT(q[0], q[1]);
 ```
 2. Running the Simulator
 You can use the simulator directly in Python to execute gates or process an AST:
+
 ```bash
 from core.simulator import Simulator
 
