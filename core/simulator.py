@@ -8,6 +8,7 @@ X = np.array([[0, 1], [1, 0]], dtype=complex)
 Z = np.array([[1, 0], [0, -1]], dtype=complex)
 
 def rx(theta):
+    """Returns the rotation matrix for the X-axis."""
     return np.array([[np.cos(theta/2), -1j*np.sin(theta/2)],
                      [-1j*np.sin(theta/2), np.cos(theta/2)]], dtype=complex)
 
@@ -16,33 +17,39 @@ class Simulator:
         self.num_qubits = num_qubits
         self.state = np.zeros(2**num_qubits, dtype=complex)
         self.state[0] = 1.0
-        self.history = []
+        self.history = []  # For the drawer
 
     def get_statevector(self):
         return self.state
 
     def get_probabilities(self):
+        """Returns a dictionary mapping bitstrings to probabilities."""
         probs = np.abs(self.state)**2
-        return {format(i, f'0{self.num_qubits}b'): float(p) for i, p in enumerate(probs)}
+        return {
+            format(i, f'0{self.num_qubits}b'): float(p) 
+            for i, p in enumerate(probs)
+        }
 
     def apply_gate(self, gate_name, target_indices, angle=None):
+        """Dispatcher for all gate types."""
         if isinstance(target_indices, int):
             target_indices = [target_indices]
         
         self.history.append((gate_name, target_indices))
 
+        # --- THIS BLOCK MUST BE PERFECTLY ALIGNED ---
         if gate_name == 'H':
             self._apply_1q_gate(H, target_indices[0])
-            elif gate_name == 'X':
-                self._apply_1q_gate(X, target_indices[0])
-            elif gate_name == 'Z':
-                self._apply_1q_gate(Z, target_indices[0])
-            elif gate_name == 'RX' and angle is not None:
-                self._apply_1q_gate(rx(angle), target_indices[0])
-            elif gate_name == 'CNOT':
-                self._apply_controlled_gate(X, target_indices[0], target_indices[1])
-            elif gate_name == 'CZ':
-                self._apply_controlled_gate(Z, target_indices[0], target_indices[1])
+        elif gate_name == 'X':
+            self._apply_1q_gate(X, target_indices[0])
+        elif gate_name == 'Z':
+            self._apply_1q_gate(Z, target_indices[0])
+        elif gate_name == 'RX' and angle is not None:
+            self._apply_1q_gate(rx(angle), target_indices[0])
+        elif gate_name == 'CNOT':
+            self._apply_controlled_gate(X, target_indices[0], target_indices[1])
+        elif gate_name == 'CZ':
+            self._apply_controlled_gate(Z, target_indices[0], target_indices[1])
 
     def _apply_1q_gate(self, gate_matrix, target_qubit):
         """Applies a 1-qubit gate using the Kronecker product."""
@@ -52,14 +59,12 @@ class Simulator:
                 op = np.kron(op, gate_matrix)
             else:
                 op = np.kron(op, I)
-        # Ensure we are multiplying a (N,N) matrix by a (N,) vector
         self.state = np.dot(op, self.state)
 
     def _apply_controlled_gate(self, matrix, control, target):
-        """Applies a controlled gate by manipulating state amplitudes directly."""
+        """Applies a controlled matrix (X for CNOT, Z for CZ)."""
         new_state = np.zeros_like(self.state)
         for i in range(len(self.state)):
-            # Check if control bit is 1
             if (i >> (self.num_qubits - 1 - control)) & 1:
                 if np.array_equal(matrix, X): # CNOT
                     flipped_idx = i ^ (1 << (self.num_qubits - 1 - target))
@@ -74,6 +79,7 @@ class Simulator:
         self.state = new_state
 
     def draw(self):
+        """Prints an ASCII representation of the circuit."""
         lines = [f"q{i}: ──" for i in range(self.num_qubits)]
         for gate, targets in self.history:
             if len(targets) == 1:
@@ -86,7 +92,8 @@ class Simulator:
                     if i == c: lines[i] += "──●──"
                     elif i == t: lines[i] += f"─[{gate[1] if len(gate)>1 else gate}]─"
                     else: lines[i] += "─────"
-        for line in lines: print(line)
+        for line in lines:
+            print(line)
 
     def run_program(self, ast_root):
         statements = ast_root.statements if hasattr(ast_root, 'statements') else ast_root
@@ -101,4 +108,6 @@ class Simulator:
         indices = re.findall(r'\[(\d+)\]', target_str)
         return [int(i) for i in indices]
 
+# Compatibility alias for the test suite
+Simulator = Simulator
 QuantumSimulator = Simulator
