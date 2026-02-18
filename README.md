@@ -42,29 +42,28 @@ CNOT(q[0], q[1]);
 ```
 2. Running the Simulator
 You can use the simulator directly in Python to execute gates or process an AST:
+```bash
 from core.simulator import Simulator
 
 # Initialize 2 qubits
-```bash
 sim = Simulator(num_qubits=2)
-```
+
 # Apply gates
-```bash
 sim.apply_gate('H', [0])
 sim.apply_gate('CNOT', [0, 1])
-```
+
 # Visualize the circuit
-```bash
 sim.draw()
-```
+
 # Get state results
-```bash
 print(sim.get_probabilities())
 ```
 3. Circuit Visualization
 Q-Lite includes a built-in ASCII drawer to debug your circuit logic visually:
+```bash
 q0: ──[H]────●──
 q1: ────────[X]─
+```
 
 🧬 Supported Gates
 | Gate | Type | Description |
@@ -75,22 +74,26 @@ q1: ────────[X]─
 | RX(θ) | Single | Rotation around the X-axis |
 | CNOT | Multi | Controlled-NOT (Entangles two qubits) |
 | CZ | Multi | Controlled-Z (Phase entanglement) |
-🧪 Testing
+
+# Testing
 We use unittest to ensure mathematical accuracy of the state-vector transitions.
+```bash
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 python -m unittest discover tests
-
-The test suite covers:
+```
+# The test suite covers:
  * Initial state |00\rangle verification.
  * Bell State probability distribution (50/50 split).
  * CZ Gate phase-interference logic.
-🗺️ Roadmap
+
+# Roadmap
  * [x] State-vector Simulation
  * [x] ASCII Circuit Drawing
  * [x] Multi-qubit Gate Support (CNOT, CZ)
  * [ ] OpenQASM 3.0 Compatibility
  * [ ] Integration with IBM Quantum (Qiskit)
-📄 License
+
+# License
 Distributed under the MIT License. See LICENSE for more information.
 Project Link: https://github.com/MAX25M/qlite
 
