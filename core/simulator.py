@@ -36,7 +36,7 @@ class QuantumSimulator:
         
     def run_program(ast_root, simulator):
     # For simplicity, assume we know we need 2 qubits
-    sim = QuantumSimulator(num_qubits=2)
+       commit sim = QuantumSimulator(num_qubits=2)
 
     for node in ast_root.statements:
         if isinstance(node, GateNode):
