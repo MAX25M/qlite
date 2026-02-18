@@ -86,17 +86,13 @@ python -m unittest discover tests
  * Initial state |00\rangle verification.
  * Bell State probability distribution (50/50 split).
  * CZ Gate phase-interference logic.
-
-# Roadmap
- * [x] State-vector Simulation
- * [x] ASCII Circuit Drawing
- * [x] Multi-qubit Gate Support (CNOT, CZ)
- * [ ] OpenQASM 3.0 Compatibility
- * [ ] Integration with IBM Quantum (Qiskit)
+--
 ## 🗺️ Roadmap
-- ![Done](https://img.shields.io/badge/-Complete-success?style=flat-square) State-vector Simulation
-- ![In Progress](https://img.shields.io/badge/-In_Progress-yellow?style=flat-square) ASCII Circuit Drawing
-- ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) OpenQASM 3.0 Compatibility
+*![Done](https://img.shields.io/badge/-Complete-success?style=flat-square) State-vector Simulation
+![Done](https://img.shields.io/badge/-Complete-success?style=flat-square) ASCII Circuit Drawing
+![Done](https://img.shields.io/badge/-Complete-success?style=flat-square) Multi-qubit Gate Support (CNOT, CZ)
+![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) OpenQASM 3.0 Compatibility
+![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square)Integration with IBM Quantum (Qiskit)
 
 # License
 Distributed under the MIT License. See LICENSE for more information.
