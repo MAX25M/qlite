@@ -3,7 +3,7 @@
 
 ![Tests](https://github.com/MAX25M/qlite/actions/workflows/tests.yml/badge.svg)
 ![PyPI Version](https://img.shields.io/pypi/v/qlite)
-![License](https://img.shields.io/github/license/MAX25M)
+![License](https://img.shields.io/github/license/MAX25M/qlite)
 
 ---
 ## Quantum Computing Made Simple
@@ -99,7 +99,7 @@ python -m unittest discover tests
 * ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) Q-Lite Quantum Programming Language Standalone IDE
 * ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) "Hardware Bridge"—a module that converts Q-Lite AST directly into OpenQASM,
 ---
-## Support the Developer 💖
+## Support the Developer 💝
 
 If you find **QLite** useful, please consider supporting its development!
 
@@ -117,4 +117,5 @@ Distributed under the MIT License. See LICENSE for more information.
 Project Link: https://github.com/MAX25M/qlite
 
 ---
+©2026 QLite. All rights reserved 
 
