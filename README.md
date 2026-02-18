@@ -109,8 +109,7 @@ Project Link: https://github.com/MAX25M/qlite
 
 If **Q-Lite** helped you learn quantum computing or speed up your workflow, consider buying me a coffee! Your support helps keep the project alive and free.
 
-[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge&logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID)
-
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge&logo=paypal)](https://www.paypal.com/paypalme/MarkJosephOctavo?locale.x=en_US&country.x=PH
 ---
 
 
