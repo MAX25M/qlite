@@ -1,26 +1,49 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import re
-# Assuming these are your local files
-# from .AST_Node import GateNode, MeasurementNode, Program 
-# import .Base_Gates as bg
 
-# Helper for Gate matrices (H, I, and RX)
-I = np.array([[1, 0], [0, 1]])
-H = (1/np.sqrt(2)) * np.array([[1, 1], [1, -1]])
+# Helper for Gate matrices
+I = np.array([[1, 0], [0, 1]], dtype=complex)
+H = (1/np.sqrt(2)) * np.array([[1, 1], [1, -1]], dtype=complex)
+X = np.array([[0, 1], [1, 0]], dtype=complex)
 
 def rx(theta):
     return np.array([[np.cos(theta/2), -1j*np.sin(theta/2)],
-                     [-1j*np.sin(theta/2), np.cos(theta/2)]])
+                     [-1j*np.sin(theta/2), np.cos(theta/2)]], dtype=complex)
 
 class Simulator:
     def __init__(self, num_qubits=2):
         self.num_qubits = num_qubits
+        # Initialize state to |00...0>
         self.state = np.zeros(2**num_qubits, dtype=complex)
         self.state[0] = 1.0
 
-    def apply_gate(self, gate_matrix, target_qubit):
-        """Applies a 1-qubit gate to a specific target using Kronecker product."""
+    def get_statevector(self):
+        """Returns the current state vector. Required for TestSimulator."""
+        return self.state
+
+    def get_probabilities(self):
+        """Returns a dictionary mapping bitstrings to probabilities. Required for TestSimulator."""
+        probs = np.abs(self.state)**2
+        return {
+            format(i, f'0{self.num_qubits}b'): float(p) 
+            for i, p in enumerate(probs)
+        }
+
+    def apply_gate(self, gate_name, target_indices, angle=None):
+        """
+        Unified gate application. 
+        Supports string names (H, CNOT, RX) to match run_program and tests.
+        """
+        if gate_name == 'H':
+            self._apply_1q_gate(H, target_indices[0])
+        elif gate_name == 'RX' and angle is not None:
+            self._apply_1q_gate(rx(angle), target_indices[0])
+        elif gate_name == 'CNOT':
+            self._apply_cnot(target_indices[0], target_indices[1])
+
+    def _apply_1q_gate(self, gate_matrix, target_qubit):
+        """Internal helper for Kronecker product single-qubit gates."""
         full_op = np.array([1.0])
         for i in range(self.num_qubits):
             if i == target_qubit:
@@ -28,75 +51,56 @@ class Simulator:
             else:
                 full_op = np.kron(full_op, I)
         self.state = np.dot(full_op, self.state)
-        
-    def get_statevector(self):
-        """Returns the current state vector. Added for TestSimulator compatibility."""
-        return self.state
 
-    def get_probabilities(self):
-        """Returns a dictionary mapping bitstrings to probabilities."""
-        probabilities = np.abs(self.state)**2
-        # Convert the flat array into a dictionary: {'00': 0.5, '11': 0.5}
-        return {
-            format(i, f'0{self.num_qubits}b'): float(p) 
-            for i, p in enumerate(probabilities)
-        }
+    def _apply_cnot(self, control, target):
+        """Applies a CNOT gate using state manipulation."""
+        new_state = np.zeros_like(self.state)
+        for i in range(len(self.state)):
+            # Check if control bit is set
+            if (i >> (self.num_qubits - 1 - control)) & 1:
+                # Flip the target bit
+                target_bit = (i ^ (1 << (self.num_qubits - 1 - target)))
+                new_state[target_bit] = self.state[i]
+            else:
+                new_state[i] = self.state[i]
+        self.state = new_state
 
     def measure(self):
-        probs = self.get_probabilities()
-        # Ensure probabilities sum to exactly 1.0 for random.choice
-        probs /= np.sum(probs) 
-        outcome = np.random.choice(len(self.state), p=probs)
+        """Collapses the state and returns the result string."""
+        probs_dict = self.get_probabilities()
+        probs_array = np.array(list(probs_dict.values()))
+        probs_array /= np.sum(probs_array)
+        
+        outcome_idx = np.random.choice(len(self.state), p=probs_array)
         self.state = np.zeros_like(self.state)
-        self.state[outcome] = 1.0
-        return format(outcome, f'0{self.num_qubits}b')
+        self.state[outcome_idx] = 1.0
+        return format(outcome_idx, f'0{self.num_qubits}b')
 
     def run_program(self, ast_root):
         """Executes the Abstract Syntax Tree."""
-        # Note: In a real compiler, ast_root.statements is a list
-        # If ast_root is already a list, iterate directly
         statements = ast_root.statements if hasattr(ast_root, 'statements') else ast_root
         
         for node in statements:
-            # Check for GateNodes
-            # We use hasattr or isinstance depending on your setup
             if hasattr(node, 'name'):
                 indices = self.parse_indices(node.target)
-                
-                if node.name == 'H':
-                    self.apply_gate(H, indices[0])
-                
-                elif node.name == 'RX':
-                    self.apply_gate(rx(node.angle), indices[0])
-                
-                elif node.name == 'CNOT':
-                    # Assuming you have an external apply_cnot helper
-                    # self.state = apply_cnot(self.state, indices[0], indices[1], self.num_qubits)
-                    print(f"Applying CNOT on {indices}")
-                
-                elif node.name == 'SWAP':
-                    print(f"Applying SWAP on {indices}")
-                
-                elif node.name in ['CCNOT', 'Toffoli']:
-                    print(f"Applying Toffoli on {indices}")
+                # Pass the node.name and indices to the unified apply_gate
+                self.apply_gate(node.name, indices, angle=getattr(node, 'angle', None))
             
-            # Check for MeasurementNodes
             elif hasattr(node, 'bit_name'):
-                result = self.measure()
-                print(f"Measured state: {result}")
+                self.measure()
 
     def parse_indices(self, target_str):
+        """Extracts [0, 1] from 'q[0], q[1]'."""
         indices = re.findall(r'\[(\d+)\]', str(target_str))
         return [int(i) for i in indices]
 
     def plot_probabilities(self):
-        probs = self.get_probabilities()
-        states = [format(i, f'0{self.num_qubits}b') for i in range(len(probs))]
-        plt.bar(states, probs, color='skyblue')
+        probs_dict = self.get_probabilities()
+        plt.bar(probs_dict.keys(), probs_dict.values(), color='skyblue')
         plt.xlabel('Quantum State')
         plt.ylabel('Probability')
         plt.title('Output Distribution')
         plt.show()
 
-# Standard alias for your tests to find
+# Alias for compatibility with TestSimulator
 QuantumSimulator = Simulator
