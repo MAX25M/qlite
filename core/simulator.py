@@ -33,16 +33,16 @@ class Simulator:
 
         if gate_name == 'H':
             self._apply_1q_gate(H, target_indices[0])
-        elif gate_name == 'X':
-            self._apply_1q_gate(X, target_indices[0])
-        elif gate_name == 'Z':
-            self._apply_1q_gate(Z, target_indices[0])
-        elif gate_name == 'RX' and angle is not None:
-            self._apply_1q_gate(rx(angle), target_indices[0])
-        elif gate_name == 'CNOT':
-            self._apply_controlled_gate(X, target_indices[0], target_indices[1])
-        elif gate_name == 'CZ':
-            self._apply_controlled_gate(Z, target_indices[0], target_indices[1])
+            elif gate_name == 'X':
+                self._apply_1q_gate(X, target_indices[0])
+            elif gate_name == 'Z':
+                self._apply_1q_gate(Z, target_indices[0])
+            elif gate_name == 'RX' and angle is not None:
+                self._apply_1q_gate(rx(angle), target_indices[0])
+            elif gate_name == 'CNOT':
+                self._apply_controlled_gate(X, target_indices[0], target_indices[1])
+            elif gate_name == 'CZ':
+                self._apply_controlled_gate(Z, target_indices[0], target_indices[1])
 
     def _apply_1q_gate(self, gate_matrix, target_qubit):
         """Applies a 1-qubit gate using the Kronecker product."""
