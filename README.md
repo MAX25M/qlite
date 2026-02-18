@@ -99,17 +99,22 @@ python -m unittest discover tests
 * ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) Q-Lite Quantum Programming Language Standalone IDE
 * ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) "Hardware Bridge"—a module that converts Q-Lite AST directly into OpenQASM,
 ---
-# License
-Distributed under the MIT License. See LICENSE for more information.
-Project Link: https://github.com/MAX25M/qlite
+## Support the Developer 💖
 
+If you find **QLite** useful, please consider supporting its development!
+
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/MAX25M)
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal)](https://paypal.me/MarkJosephOctavo)
 ---
-
 ## ☕ Support the Project
 
 If **Q-Lite** helped you learn quantum computing or speed up your workflow, consider buying me a coffee! Your support helps keep the project alive and free.
 
 [![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge&logo=paypal)](https://www.paypal.com/paypalme/MarkJosephOctavo?locale.x=en_US&country.x=PH)
 ---
+# License
+Distributed under the MIT License. See LICENSE for more information.
+Project Link: https://github.com/MAX25M/qlite
 
+---
 
