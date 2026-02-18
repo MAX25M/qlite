@@ -28,9 +28,19 @@ class Simulator:
             else:
                 full_op = np.kron(full_op, I)
         self.state = np.dot(full_op, self.state)
+        
+    def get_statevector(self):
+        """Returns the current state vector. Added for TestSimulator compatibility."""
+        return self.state
 
     def get_probabilities(self):
-        return np.abs(self.state)**2
+        """Returns a dictionary mapping bitstrings to probabilities."""
+        probabilities = np.abs(self.state)**2
+        # Convert the flat array into a dictionary: {'00': 0.5, '11': 0.5}
+        return {
+            format(i, f'0{self.num_qubits}b'): float(p) 
+            for i, p in enumerate(probabilities)
+        }
 
     def measure(self):
         probs = self.get_probabilities()
