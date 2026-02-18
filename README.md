@@ -82,18 +82,19 @@ We use unittest to ensure mathematical accuracy of the state-vector transitions.
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 python -m unittest discover tests
 ```
+---
 # The test suite covers:
  * Initial state |00\rangle verification.
  * Bell State probability distribution (50/50 split).
  * CZ Gate phase-interference logic.
---
+---
 ## 🗺️ Roadmap
 * ![Done](https://img.shields.io/badge/-Complete-success?style=flat-square) State-vector Simulation
 * ![Done](https://img.shields.io/badge/-Complete-success?style=flat-square) ASCII Circuit Drawing
 * ![Done](https://img.shields.io/badge/-Complete-success?style=flat-square) Multi-qubit Gate Support (CNOT, CZ)
-_![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) OpenQASM 3.0 Compatibility
-_![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square)Integration with IBM Quantum (Qiskit)
-
+* ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) OpenQASM 3.0 Compatibility
+* ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square)Integration with IBM Quantum (Qiskit)
+---
 # License
 Distributed under the MIT License. See LICENSE for more information.
 Project Link: https://github.com/MAX25M/qlite
