@@ -93,6 +93,10 @@ python -m unittest discover tests
  * [x] Multi-qubit Gate Support (CNOT, CZ)
  * [ ] OpenQASM 3.0 Compatibility
  * [ ] Integration with IBM Quantum (Qiskit)
+## 🗺️ Roadmap
+- ![Done](https://img.shields.io/badge/-Complete-success?style=flat-square) State-vector Simulation
+- ![In Progress](https://img.shields.io/badge/-In_Progress-yellow?style=flat-square) ASCII Circuit Drawing
+- ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) OpenQASM 3.0 Compatibility
 
 # License
 Distributed under the MIT License. See LICENSE for more information.
