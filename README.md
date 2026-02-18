@@ -4,11 +4,11 @@
 ![Tests](https://github.com/MAX25M/qlite/actions/workflows/tests.yml/badge.svg)
 ![PyPI Version](https://img.shields.io/pypi/v/qlite)
 ![License](https://img.shields.io/github/license/MAX25M/qlite)
-
+---
 ## Quantum Computing Made Simple
 
 **Q-Lite** is a lightweight, modular quantum compiler and simulator designed for both beginners and quantum enthusiasts. Build quantum algorithms from the command line, simulate them locally, or seamlessly export to IBM Quantum—all with a streamlined, mobile-friendly interface. It bridges the gap between high-level quantum programming and local simulation, featuring a custom AST-based Q-Lite interpreter and an integrated circuit visualization tool.
-
+---
 ### Key Features
 
 - **CLI to Cloud**: Program quantum algorithms directly from your terminal
@@ -22,7 +22,7 @@
 - **Advanced Gate Library**: Support for `H`, `X`, `Z`, `RX(θ)`, `CNOT`, and `CZ`.
 ---
 
-## 🛠️ Installation
+## Installation
 
 Clone the repository and install the dependencies:
 
@@ -31,6 +31,7 @@ git clone [https://github.com/MAX25M/qlite.git](https://github.com/MAX25M/qlite.
 cd qlite
 pip install -r requirements.txt
 ```
+---
 Usage
 1. The Q-Lite Language (.ql)
 Write your quantum algorithms in a simple, declarative style:
@@ -65,7 +66,7 @@ Q-Lite includes a built-in ASCII drawer to debug your circuit logic visually:
 q0: ──[H]────●──
 q1: ────────[X]─
 ```
-
+---
 🧬 Supported Gates
 | Gate | Type | Description |
 |---|---|---|
@@ -75,7 +76,7 @@ q1: ────────[X]─
 | RX(θ) | Single | Rotation around the X-axis |
 | CNOT | Multi | Controlled-NOT (Entangles two qubits) |
 | CZ | Multi | Controlled-Z (Phase entanglement) |
-
+---
 # Testing
 We use unittest to ensure mathematical accuracy of the state-vector transitions.
 ```bash
