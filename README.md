@@ -44,7 +44,7 @@ Clone the repository and install the dependencies:
 git clone [https://github.com/MAX25M/qlite.git](https://github.com/MAX25M/qlite.git)
 cd qlite
 pip install -r requirements.txt
-
+```
 Usage
 1. The Q-Lite Language (.ql)
 Write your quantum algorithms in a simple, declarative style:
