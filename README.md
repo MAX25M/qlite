@@ -115,7 +115,7 @@ If **Qlite** helped you learn quantum computing or speed up your workflow, consi
 [![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge&logo=paypal)](https://www.paypal.com/paypalme/MarkJosephOctavo?locale.x=en_US&country.x=PH)
 ---
 # License
-This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details. Distributed under the MIT License. See [LICENSE](LICENSE.md)for more information.
+This project is licensed under the  [**Apache License 2.0**](LICENSE). Distributed under the [MIT License](LICENSE.md).
 
 ## How to Cite
 If you use this software in your work, please cite it as follows:
