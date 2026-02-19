@@ -32,3 +32,4 @@ Thank you for considering contributing to Qlite! Here are some guidelines on how
 
 ## Further Information
 If you have any questions, feel free to open an issue or contact the maintainers.
+
