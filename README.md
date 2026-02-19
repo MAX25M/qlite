@@ -117,5 +117,5 @@ Distributed under the MIT License. See LICENSE for more information.
 Project Link: https://github.com/MAX25M/qlite
 
 ---
-©2026 QLite. All rights reserved 
+©2026 QLite Distribution. All rights reserved 
 
