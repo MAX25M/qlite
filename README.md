@@ -1,4 +1,4 @@
-# Q-Lite Compiler 
+# Q-Lite Language & Compiler 
 ## Powered by Q-Lite Language 
 
 ![Tests](https://github.com/MAX25M/qlite/actions/workflows/tests.yml/badge.svg)
