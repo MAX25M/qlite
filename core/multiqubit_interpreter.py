@@ -86,3 +86,5 @@ def apply_controlled_phase(state, ctrl, target, k, num_qubits):
             
     return np.dot(op0 + op1, state)
           
+
+
