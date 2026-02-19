@@ -121,8 +121,6 @@ This project is licensed under the **Apache License 2.0**. See the [LICENSE](LIC
 
 ## How to Cite
 If you use this software in your work, please cite it as follows:
-
-**BibTeX:**
 ```bibtex
 @software{QLite,
   author = {Mark Joseph N. Octavo},
