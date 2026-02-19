@@ -5,6 +5,8 @@
 ![PyPI Version](https://img.shields.io/pypi/v/qlite)
 ![License](https://img.shields.io/github/license/MAX25M/qlite)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers)
 
 ---
 ## Quantum Computing Made Simple
