@@ -117,3 +117,4 @@ class Simulator:
 
 # Keep compatibility for testing
 QuantumSimulator = Simulator
+
