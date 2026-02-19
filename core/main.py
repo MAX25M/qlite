@@ -13,6 +13,7 @@ CNOT(q[0], q[1]);
 q[0] => c0;
 q[1] => c1;
 """
+
 class QuantumApp:
     def __init__(self, num_qubits):
         self.num_qubits = num_qubits
