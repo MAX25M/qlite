@@ -6,3 +6,4 @@ X q[0];
 
 # Apply the macro
 QFT q[0:3];
+
