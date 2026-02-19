@@ -1,6 +1,37 @@
 # Qlite Language & Compiler 
 ## Powered by Qlite language 
 
+# 👋 Hi, I'm [Your Name]!
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Status-Building_Awesome_Stuff-success?style=flat-square&logo=github" />
+  <img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square&logo=apache" />
+  <img src="https://img.shields.io/badge/Achievement-Open_Source_Contributor-gold?style=flat-square&logo=starship" />
+</p>
+
+---
+
+### 🏆 GitHub Trophies
+[![trophies](https://github-profile-trophy.vercel.app/?username=[Your-Username]&theme=radical&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+### 📊 My GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=[Your-Username]&show_icons=true&theme=radical&rank_icon=github&border_radius=10" alt="Stats Card" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=[Your-Username]&layout=compact&theme=radical&border_radius=10" alt="Top Langs" />
+</p>
+
+---
+
+### 🛠️ Tech Stack
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+</p>
+
 ![Tests](https://github.com/MAX25M/qlite/actions/workflows/tests.yml/badge.svg)
 ![PyPI Version](https://img.shields.io/pypi/v/qlite)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
