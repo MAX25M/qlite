@@ -117,6 +117,21 @@ If **Q-Lite** helped you learn quantum computing or speed up your workflow, cons
 Distributed under the MIT License. See LICENSE for more information.
 Project Link: https://github.com/MAX25M/qlite
 
+This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details.
+
+## 📝 How to Cite
+If you use this software in your work, please cite it as follows:
+
+**BibTeX:**
+```bibtex
+@software{project_name_2026,
+  author = {[Mark Joseph N. Octavo]},
+  title = {[Q-Lite Quantum Programming Language and Compiler]},
+  url = {[Your Project URL]},
+  version = {0.0.6},
+  year = {2026}
+}
+```
 ---
 ©2026 QLite Distribution. All rights reserved 
 
