@@ -3,7 +3,7 @@ message: "If you use this software, please cite it as below."
 authors:
 - family-names: "[Octavo"]
   given-names: "[Mark Joseph]"
-  orcid: "https://orcid.org/0000-0000-0000-0000" # Optional
+  orcid: "" 
 title: "[Qlite Quantum Programming Language and Compiler]"
 version: 0.0.6
 date-released: 2026-02-18
