@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 [![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers)
+![Milestone](https://img.shields.io/badge/Achievement-Project_Launched_2026-blueviolet?style=for-the-badge&logo=rocket&logoColor=white)
+
 ---  
 ## Quantum Computing Made Simple
 **Qlite** *(`kla•yt)* is a lightweight, modular quantum compiler and simulator designed for both beginners and quantum enthusiasts. Build quantum algorithms from the command line, simulate them locally, or seamlessly export to IBM Quantum—all with a streamlined, mobile-friendly interface. It bridges the gap between high-level quantum programming and local simulation, featuring a custom AST-based Qlite interpreter and an integrated circuit visualization tool.
