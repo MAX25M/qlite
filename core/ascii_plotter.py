@@ -46,3 +46,4 @@ def print_state_vector(state_vector):
             # Format complex numbers: (real + imag j)
             print(f"|{bin(i)[2:].zfill(int(math.log2(len(state_vector))))}>: {amp:.4f}")
           
+
