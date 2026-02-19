@@ -2,12 +2,6 @@
 
 Thank you for considering contributing to Qlite! Here are some guidelines on how to contribute effectively.
 
-## License Badge
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
-## Repository Badge
-[![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers)
-
 ## How to Contribute
 1. **Fork the repository.**
 2. **Create a new branch.**
