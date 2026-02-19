@@ -13,4 +13,3 @@ class MeasurementNode:
         self.qubit = qubit
         self.classical_reg = classical_reg
       
-
