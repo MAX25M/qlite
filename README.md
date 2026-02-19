@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 [![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers)
-[![github-trophy](https://github-profile-trophy.vercel.app/?username=[MAX25M])](https://github.com/users/MAX25M/achievements/pull-shark)
+[![Achievement](https://github-profile-trophy.vercel.app/?username=[MAX25M])](https://github.com/users/MAX25M/achievements/pull-shark)
 
 ---
 ## Quantum Computing Made Simple
