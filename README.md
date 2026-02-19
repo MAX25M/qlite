@@ -115,7 +115,6 @@ If **Q-Lite** helped you learn quantum computing or speed up your workflow, cons
 ---
 # License
 This project is licensed under the **Apache License 2.0**. See the [LICENSE](LICENSE) file for details. Distributed under the MIT License. See [LICENSE](LICENSE.md)for more information.
-Project Link: [QLITE](https://github.com/MAX25M/qlite)
 
 ## How to Cite
 If you use this software in your work, please cite it as follows:
@@ -129,5 +128,5 @@ If you use this software in your work, please cite it as follows:
 }
 ```
 ---
-©2026 QLite Distribution. All rights reserved 
+©2026 [QLITE](https://github.com/MAX25M/qlite) Distribution. All rights reserved 
 
