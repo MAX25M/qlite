@@ -124,7 +124,7 @@ If you use this software in your work, please cite it as follows:
 
 **BibTeX:**
 ```bibtex
-@software{Q-Lite Distribution,
+@software{QLite,
   author = {Mark Joseph N. Octavo},
   title = {Q-Lite Quantum Programming Language and Compiler},
   url = {https://github.com/MAX25M/qlite},
