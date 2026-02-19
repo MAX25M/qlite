@@ -12,6 +12,7 @@
 <img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square&logo=apache" />
 <img src="https://img.shields.io/badge/Achievement-Open_Source_Contributor-gold?style=flat-square&logo=starship" />
 </p>
+
 ![Tests](https://github.com/MAX25M/qlite/actions/workflows/tests.yml/badge.svg)
 ![PyPI Version](https://img.shields.io/pypi/v/qlite)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
