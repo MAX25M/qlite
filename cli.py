@@ -3,6 +3,7 @@ import argparse
 import sys
 from main import QuantumApp
 
+
 def main():
     parser = argparse.ArgumentParser(description="Q-Lite Quantum Compiler & Simulator CLI")
     
