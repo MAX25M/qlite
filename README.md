@@ -79,6 +79,7 @@ q1: ────────[X]─
 | CNOT | Multi | Controlled-NOT (Entangles two qubits) |
 | CZ | Multi | Controlled-Z (Phase entanglement) |
 ---
+
 # Testing
 We use unittest to ensure mathematical accuracy of the state-vector transitions.
 ```bash
