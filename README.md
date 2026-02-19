@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 ---
 Usage
-1. The Q-Lite Language (.ql)
+1. The Qlite Language (.ql)
 Write your quantum algorithms in a simple, declarative style:
 ```bash
 // Example: Bell State
@@ -69,7 +69,7 @@ q0: ──[H]────●──
 q1: ────────[X]─
 ```
 ---
-# QLite Supported Gates
+# Qlite (.ql) Supported Gates
 | Gate | Type | Description |
 |---|---|---|
 | H | Single | Creates superposition ($ |
@@ -128,5 +128,5 @@ If you use this software in your work, please cite it as follows:
 }
 ``` 
 ---
-©2026 [QLITE](https://github.com/MAX25M/qlite) Distribution. All rights reserved 
+©2026 [Qlite](https://github.com/MAX25M/qlite) Distribution. All rights reserved 
 
