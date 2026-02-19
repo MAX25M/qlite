@@ -79,4 +79,5 @@ print(f"{'Token Type':<15} | {'Value':<15}")
 print("-" * 35)
 for tok in lexer:
     print(f"{tok.type:<15} | {tok.value:<15}")
+
   
