@@ -131,7 +131,7 @@ If you use this software in your work, please cite it as follows:
   version = {0.0.6},
   year = {2026}
 }
-
+```
 ---
 ©2026 QLite Distribution. All rights reserved 
 
