@@ -132,7 +132,6 @@ If you use this software in your work, please cite it as follows:
   year = {2026}
 }
 ```
-
 ---
 ©2026 QLite Distribution. All rights reserved 
 
