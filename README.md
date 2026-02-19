@@ -129,7 +129,7 @@ If you use this software in your work, please cite it as follows:
 @software{project_name_2026,
   author = {Mark Joseph N. Octavo},
   title = {Q-Lite Quantum Programming Language and Compiler},
-  url = {Your Project URL},
+  url = {https://github.com/MAX25M/qlite},
   version = {0.0.6},
   year = {2026}
 }
