@@ -1,5 +1,5 @@
 # Q-Lite Compiler 
-## Powered by Q-Lite Language ⚛️
+## Powered by Q-Lite Language 
 
 ![Tests](https://github.com/MAX25M/qlite/actions/workflows/tests.yml/badge.svg)
 ![PyPI Version](https://img.shields.io/pypi/v/qlite)
