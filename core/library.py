@@ -22,3 +22,4 @@ class QuantumLibrary:
             GateNode('CNOT', f"q[{a_qubits[0]}], q[{b_qubits[0]}]")
         ]
       
+
