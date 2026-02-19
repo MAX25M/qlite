@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="qlite",
-    version="1.0.0",
+    version="0.0.6",
     author="Mark Joseph N. Octavo",
     description="A modular, mobile-friendly Quantum Compiler and Simulator",
     long_description=open("README.md").read(),
