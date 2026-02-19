@@ -1,5 +1,5 @@
-# Q-Lite Language & Compiler 
-## Powered by Q-Lite Language 
+# Qlite Language & Compiler 
+## Powered by Qlite language 
 
 ![Tests](https://github.com/MAX25M/qlite/actions/workflows/tests.yml/badge.svg)
 ![PyPI Version](https://img.shields.io/pypi/v/qlite)
@@ -8,7 +8,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers)
 ---
 ## Quantum Computing Made Simple
-**Q-Lite** is a lightweight, modular quantum compiler and simulator designed for both beginners and quantum enthusiasts. Build quantum algorithms from the command line, simulate them locally, or seamlessly export to IBM Quantum—all with a streamlined, mobile-friendly interface. It bridges the gap between high-level quantum programming and local simulation, featuring a custom AST-based Q-Lite interpreter and an integrated circuit visualization tool.
+**Q-Lite** (kla•yt') is a lightweight, modular quantum compiler and simulator designed for both beginners and quantum enthusiasts. Build quantum algorithms from the command line, simulate them locally, or seamlessly export to IBM Quantum—all with a streamlined, mobile-friendly interface. It bridges the gap between high-level quantum programming and local simulation, featuring a custom AST-based Q-Lite interpreter and an integrated circuit visualization tool.
 
 ---
 ### Key Features
