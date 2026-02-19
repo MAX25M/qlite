@@ -8,7 +8,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers)
 ---
 ## Quantum Computing Made Simple
-**Q-Lite** (kla•yt') is a lightweight, modular quantum compiler and simulator designed for both beginners and quantum enthusiasts. Build quantum algorithms from the command line, simulate them locally, or seamlessly export to IBM Quantum—all with a streamlined, mobile-friendly interface. It bridges the gap between high-level quantum programming and local simulation, featuring a custom AST-based Q-Lite interpreter and an integrated circuit visualization tool.
+**Q-Lite** *(`kla•yt)* is a lightweight, modular quantum compiler and simulator designed for both beginners and quantum enthusiasts. Build quantum algorithms from the command line, simulate them locally, or seamlessly export to IBM Quantum—all with a streamlined, mobile-friendly interface. It bridges the gap between high-level quantum programming and local simulation, featuring a custom AST-based Qlite interpreter and an integrated circuit visualization tool.
 
 ---
 ### Key Features
@@ -97,19 +97,19 @@ python -m unittest discover tests
 * ![Done](https://img.shields.io/badge/-Complete-success?style=flat-square) Multi-qubit Gate Support (CNOT, CZ)
 * ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) OpenQASM 3.0 Compatibility
 * ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square)Integration with IBM Quantum (Qiskit)
-* ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) Q-Lite Quantum Programming Language Standalone IDE
-* ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) "Hardware Bridge"—a module that converts Q-Lite AST directly into OpenQASM,
+* ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) Qlite Quantum Programming Language Standalone IDE
+* ![Planned](https://img.shields.io/badge/-Planned-lightgrey?style=flat-square) "Hardware Bridge"—a module that converts Qlite AST directly into OpenQASM,
 ---
 ## Support the Developer 
 
-If you find **QLite** useful, please consider supporting its development!
+If you find **Qlite** useful, please consider supporting its development!
 
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/MAX25M)
 [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal)](https://paypal.me/MarkJosephOctavo)
 ---
 ## Support the Project
 
-If **Q-Lite** helped you learn quantum computing or speed up your workflow, consider buying me a coffee! Your support helps keep the project alive and free.
+If **Qlite** helped you learn quantum computing or speed up your workflow, consider buying me a coffee! Your support helps keep the project alive and free.
 
 [![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge&logo=paypal)](https://www.paypal.com/paypalme/MarkJosephOctavo?locale.x=en_US&country.x=PH)
 ---
@@ -119,9 +119,9 @@ This project is licensed under the **Apache License 2.0**. See the [LICENSE](LIC
 ## How to Cite
 If you use this software in your work, please cite it as follows:
 ```bibtex
-@software{QLite,
+@software{Qlite,
   author = {Mark Joseph N. Octavo},
-  title = {Q-Lite Quantum Programming Language and Compiler},
+  title = {Qlite Quantum Programming Language and Compiler},
   url = {https://github.com/MAX25M/qlite},
   version = {0.0.6},
   year = {2026}
