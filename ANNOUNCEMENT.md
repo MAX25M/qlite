@@ -1,0 +1,25 @@
+# 🚀 Announcement
+Introducing Q-Lite 0.0.6.0
+I’m excited to announce the official release of **Qlite**, a modular Python-based Quantum Compiler and Simulator! Quantum programming often feels locked behind complex setups. I built *Qlite Language* to bridge that gap—providing a lightweight, full-stack environment that goes from high-level source code to hardware-ready OpenQASM.
+## Key Features:
+ * *Macro Expansion*: Use high-level commands like QFT q[0:3] and let the compiler handle the heavy lifting.
+ * *Local Simulator*: Test your logic instantly with a NumPy-powered state-vector engine.
+ * *Hardware Ready*: Transpile your designs into OpenQASM for execution on real quantum computers.
+ * *Developer Friendly*: A clean CLI that fits right into your existing workflow.
+
+Qlite is now available on PyPI and is fully Open Source under the MIT License.
+
+Check it out on my GitHub repository: [qlite](https://GitHub.com/MAX25M/Qlite)
+
+Install it today: 
+```pip install qlite-compiler```
+
+#QuantumComputing #OpenSource #Python #Physics #Coding
+
+## Project Completion Summary
+I have successfully built:
+ * The Core Engine: Lexer, Parser, and AST.
+ * The Math Engine: A simulator capable of 2^n state-vector math and counting.
+ * The Intelligence: A decomposer for hardware gates and QFT macros.
+ * The Interface: A CLI and a professional transpiler.
+ * The Legal Framework: Apache 2.0 and MIT Licenses and PyPI packaging. 
