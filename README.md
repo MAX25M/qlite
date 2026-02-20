@@ -1,7 +1,5 @@
 # Qlite Language & Compiler 
-## Powered by Qlite language 
-
-## 👋 Hi, I'm MAX25M!
+## Powered by QLDS
 
 ![Tests](https://github.com/MAX25M/qlite/actions/workflows/tests.yml/badge.svg)
 ![PyPI Version](https://img.shields.io/pypi/v/qlite)
