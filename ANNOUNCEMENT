@@ -24,4 +24,4 @@ I have successfully built:
  * The Math Engine: A simulator capable of 2^n state-vector math and counting.
  * The Intelligence: A decomposer for hardware gates and QFT macros.
  * The Interface: A CLI and a professional transpiler.
- * The Legal Framework: Apache 2.0 and MIT Licenses and PyPI packaging.
+ * The Legal Framework: Apache 2.0 and MIT Licenses and PyPI packaging. 
