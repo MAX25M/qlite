@@ -3,16 +3,21 @@ name: Generate Snake
 on:
   schedule:
     - cron: "0 */24 * * *" # Runs every 24 hours
-  workflow_dispatch: auto # Allows you to run it manually 
-permissions:
-  contents: write  # This allows the bot to push to your 'output' branch
+  workflow_dispatch: # Manual trigger
 
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake gif
+      # 1. Gain access to the repository
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Generate the actual snake files into the 'dist' folder
+      - name: Generate snake files
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -22,10 +27,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # 3. Push ONLY the 'dist' folder to a new branch called 'output'
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: main
-          build_dir: qlite
+          target_branch: output
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
