@@ -132,7 +132,7 @@ If you use this software in your work, please cite it as follows:
 ```bibtex
 @software{Qlite,
   author = {Mark Joseph N. Octavo},
-  title = {Qlite Quantum Programming Language and Compiler},
+  title = {Qlite Language and Compiler},
   url = {https://github.com/MAX25M/qlite},
   version = {0.0.6},
   year = {2026}
