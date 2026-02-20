@@ -127,9 +127,7 @@ If **Qlite** helped you learn quantum computing or speed up your workflow, consi
 [![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge&logo=paypal)](https://www.paypal.com/paypalme/MarkJosephOctavo?locale.x=en_US&country.x=PH)
 ---
 # Licenses
-This project is licensed under the  [![](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE). 
-
-Distributed under the [!(https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md).
+This project is licensed under the  [![](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) license and distributed under the [![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md). license.
 
 ## How to Cite
 If you use this software in your work, please cite it as follows:
