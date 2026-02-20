@@ -16,7 +16,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 [![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers)
-![Milestone](https://img.shields.io/badge/Achievement-Project_Launched_2026-blueviolet?style=for-the-badge&logo=rocket&logoColor=white)
+![Milestone](https://img.shields.io/badge/Achievement-Project_Launched_2026-blueviolet?style=for-the-badge&logo=rocket&logoColor=white)](ANNOUNCEMENT.md)
 
 ---  
 ## Quantum Computing Made Simple
