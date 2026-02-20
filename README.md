@@ -140,7 +140,7 @@ If you use this software in your work, please cite it as follows:
   year = {2026}
 }
 ``` 
-![](https://github.com/MAX25M/qlite/blob/output/github-snake.svg)
+![Animate my Snake](https://github.com/MAX25M/qlite/blob/output/github-snake.svg)
 
 ---
 ©2026 [Qlite](https://github.com/MAX25M/qlite) Distribution. All rights reserved 
