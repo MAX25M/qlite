@@ -20,7 +20,7 @@
 
 
 ---  
-## Quantum Computing Made Simple
+## Quantum Computing Made Simple with Qlite
 **Qlite** *(`kla•yt)* is a lightweight, modular quantum compiler and simulator designed for both beginners and quantum enthusiasts. Build quantum algorithms from the command line, simulate them locally, or seamlessly export to IBM Quantum—all with a streamlined, mobile-friendly interface. It bridges the gap between high-level quantum programming and local simulation, featuring a custom AST-based Qlite interpreter and an integrated circuit visualization tool.
 
 ---
