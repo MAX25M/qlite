@@ -143,5 +143,5 @@ If you use this software in your work, please cite it as follows:
 ![Animate my Snake](https://github.com/MAX25M/qlite/blob/output/github-snake.svg)
 
 ---
-©2026 [Qlite](https://github.com/MAX25M/qlite) Distribution. All rights reserved 
+©2026 [Qlite](https://github.com/MAX25M/qlite) Language Distribution Systems. All rights reserved 
 
