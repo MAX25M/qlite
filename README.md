@@ -11,7 +11,6 @@
 ![Milestone](https://img.shields.io/badge/Achievement-Project_Launched_2026-blueviolet?style=for-the-badge&logo=rocket&logoColor=white)
 [![Announcement](https://img.shields.io/badge/Announcement-Latest%20Updates-blue?style=for-the-badge&logo=github)](ANNOUNCEMENT.md)
 [![Contributing](https://img.shields.io/badge/Contributing-Click%20Here-green?style=for-the-badge&logo=github)](CONTRIBUTING.md)
-<p align="left">
 <img src="https://img.shields.io/badge/Status-Building_Awesome_Stuff-success?style=flat-square&logo=github" />
 <img src="https://img.shields.io/badge/Achievement-Open_Source_Contributor-gold?style=flat-square&logo=starship" />
 <p align = left>
