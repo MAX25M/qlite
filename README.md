@@ -5,7 +5,7 @@
 ![PyPI Version](https://img.shields.io/pypi/v/qlite)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
-[![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers) 
 ![Milestone](https://img.shields.io/badge/Achievement-Project_Launched_2026-blueviolet?style=for-the-badge&logo=rocket&logoColor=white)
 [![Announcement](https://img.shields.io/badge/Announcement-Latest%20Updates-blue?style=for-the-badge&logo=github)](ANNOUNCEMENT.md)
 [![Contributing](https://img.shields.io/badge/Contributing-Click%20Here-green?style=for-the-badge&logo=github)](CONTRIBUTING.md)
