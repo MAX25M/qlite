@@ -3,7 +3,10 @@ name: Generate Snake
 on:
   schedule:
     - cron: "0 */24 * * *" # Runs every 24 hours
-  workflow_dispatch: # Allows you to run it manually 
+  workflow_dispatch: auto # Allows you to run it manually 
+permissions:
+  contents: write  # This allows the bot to push to your 'output' branch
+
 
 jobs:
   build:
@@ -22,7 +25,7 @@ jobs:
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output
-          build_dir: dist
+          target_branch: main
+          build_dir: qlite
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
