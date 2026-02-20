@@ -18,6 +18,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/MAX25M/qlite.svg)](https://github.com/MAX25M/qlite/stargazers)
 ![Milestone](https://img.shields.io/badge/Achievement-Project_Launched_2026-blueviolet?style=for-the-badge&logo=rocket&logoColor=white)
 
+[![Announcement](https://img.shields.io/badge/Announcement-Latest%20Updates-blue?style=for-the-badge&logo=github)](ANNOUNCEMENT.md)
 
 ---  
 ## Quantum Computing Made Simple
